@@ -110,7 +110,7 @@ function liveUpdateEggs(){
         }
         difference=(currentTime-lastUpdate)/1000
         additionalEggs=Math.floor(difference*lastNumShrimp)
-        updateEggNumber(formatEggs(lastNumEggs+additionalEggs))
+        updateEggNumber((lastNumEggs+additionalEggs)/eggstohatch1)//formatEggs(lastNumEggs+additionalEggs))
     }
 }
 function updateSellPrice(){
